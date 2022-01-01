@@ -43,6 +43,40 @@ p {
   height: 64px;
   width: 80px;
 }
+
+#showcase {
+  position: relative;
+  height: 20rem;
+  width: 50rem;
+  margin: 2rem;
+  filter: blur(5px);
+  transition: transform 250ms, filter 250ms, border 250ms;
+}
+
+#showcase:hover {
+  transform: scale(1.1, 1.1);
+  filter: none;
+  border: solid 5px rgb(82, 7, 82);
+}
+
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: display 250ms;
+  color: antiquewhite;
+  text-shadow: 0 0 5px rgb(80, 13, 88);
+}
+
+.text-block:hover {
+  display: none;
+}
+
+.image-container {
+  text-align: center;
+}
+
 .info {
   margin: 5rem;
   text-shadow: 0 0 5px rgb(225, 0, 255);

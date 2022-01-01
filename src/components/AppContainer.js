@@ -37,7 +37,7 @@ export default function AppContainer() {
             alt="github"
           />
         </a>
-        <a href="https://www.linkedin.com/in/anthjlin/">
+        <a href="https://github.com/ajlineb">
           <img
             id="linkedin"
             src={require("./images/LI-In-Bug.png")}
