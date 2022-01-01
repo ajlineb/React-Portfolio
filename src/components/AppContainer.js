@@ -30,6 +30,24 @@ export default function AppContainer() {
     <div className="container-fluid">
       <Tabs currentPage={currentPage} pageChange={pageChange} />
       {displayPage()}
+      <div className="footer">
+        <a href="https://github.com/ajlineb">
+          <img
+            src={require("./images/GitHub-Mark-Light-64px.png")}
+            alt="github"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/anthjlin/">
+          <img
+            id="linkedin"
+            src={require("./images/LI-In-Bug.png")}
+            alt="linkedin"
+          />
+        </a>
+        <a>
+          <img></img>
+        </a>
+      </div>
     </div>
   );
 }

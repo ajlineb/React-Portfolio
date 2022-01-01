@@ -11,7 +11,7 @@ export default function Tabs({ currentPage, pageChange }) {
         <h1 className="name display-4">Anthony Linebaugh</h1>
       </Col>
       <Col md="6">
-        <ul className="nav nav-pills justify-content-center display-4 ">
+        <ul className="nav nav-pills justify-content-center display-4 tabs">
           <li className="nav-item">
             <a
               href="#home"
