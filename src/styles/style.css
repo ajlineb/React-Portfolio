@@ -8,10 +8,11 @@ li {
 }
 /* helped make border go around entire page */
 body {
+  position: relative;
   box-sizing: border-box;
   min-height: 100vh;
-  background: url(../components/images/nightSky.jpg) no-repeat center center
-    fixed;
+  max-width: 100%;
+  background: url(../components/images/nightSky.jpg) no-repeat center fixed;
   border: solid 1px black;
   box-shadow: inset 0 0 100px black;
 }
@@ -27,7 +28,10 @@ p {
 }
 
 .banner {
-  background-color: blueviolet;
+  background-image: url("../components/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   z-index: -1;
 }
 
@@ -87,12 +91,21 @@ p {
   color: antiquewhite;
 }
 
-.footer {
-  position: fixed;
+.pdf-container {
   text-align: center;
-  margin: 2rem;
-  bottom: 0;
-  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.footer-container {
+  position: relative;
+  height: 100px;
+}
+
+.footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .footer a {
