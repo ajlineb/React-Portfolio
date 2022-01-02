@@ -3,7 +3,8 @@ import { Row, Col } from "react-bootstrap";
 
 export default function Works() {
   return (
-    <div>
+    <div className="info">
+      <h1 className="title">Works</h1>
       <Row className="align-items-center">
         <Col md="6" className="image-container">
           <a href="https://jparris3213.github.io/UNC_Project_1_Group/">

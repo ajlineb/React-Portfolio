@@ -17,12 +17,6 @@ body {
   box-shadow: inset 0 0 100px black;
 }
 
-p {
-  font-size: 2rem;
-  font-weight: 600;
-  color: antiquewhite;
-}
-
 .name {
   font-weight: 900;
 }
@@ -84,11 +78,18 @@ p {
 .info {
   margin: 5rem;
   text-shadow: 0 0 5px rgb(225, 0, 255);
+  font-size: 2rem;
+  font-weight: 600;
+  color: antiquewhite;
 }
 
 .title {
   font-weight: 800;
   color: antiquewhite;
+}
+
+.form-container {
+  margin: 2rem;
 }
 
 .pdf-container {
@@ -110,4 +111,9 @@ p {
 
 .footer a {
   margin-right: 2rem;
+}
+
+.footer img:hover {
+  filter: brightness(1.5);
+  transform: scale(1.1);
 }
