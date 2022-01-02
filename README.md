@@ -33,11 +33,14 @@ This applicaiton will show my developed skills from the past to present using Re
 
 ## Images
 
-![alt website]()
+![alt website](./src/components/images/webpage.png)
 
 ## Credits
 
-Gitname on github
+[gitname](https://github.com/gitname) on github  
+ bootstrap  
+ Github for their image  
+ Linkedin for their image
 
 ## License
 
