@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.4f992c03.css",
-    "main.js": "/React-Portfolio/static/js/main.b421cb30.js",
+    "main.css": "/React-Portfolio/static/css/main.2f0051c1.css",
+    "main.js": "/React-Portfolio/static/js/main.07bab5ab.js",
     "static/js/787.9d674ab3.chunk.js": "/React-Portfolio/static/js/787.9d674ab3.chunk.js",
     "static/media/AstroProject.png": "/React-Portfolio/static/media/AstroProject.f4c55022e3a2947da247.png",
+    "static/media/Resume_7.0.pdf": "/React-Portfolio/static/media/Resume_7.0.d59c765008db408e0bfa.pdf",
     "static/media/nightSky.jpg": "/React-Portfolio/static/media/nightSky.df4fd59afcf95272b183.jpg",
     "static/media/ForumProject.png": "/React-Portfolio/static/media/ForumProject.22cd27c2d80ed29e275c.png",
+    "static/media/banner.jpg": "/React-Portfolio/static/media/banner.b12d7f95bec449956d09.jpg",
     "index.html": "/React-Portfolio/index.html",
-    "main.4f992c03.css.map": "/React-Portfolio/static/css/main.4f992c03.css.map",
-    "main.b421cb30.js.map": "/React-Portfolio/static/js/main.b421cb30.js.map",
+    "main.2f0051c1.css.map": "/React-Portfolio/static/css/main.2f0051c1.css.map",
+    "main.07bab5ab.js.map": "/React-Portfolio/static/js/main.07bab5ab.js.map",
     "787.9d674ab3.chunk.js.map": "/React-Portfolio/static/js/787.9d674ab3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f992c03.css",
-    "static/js/main.b421cb30.js"
+    "static/css/main.2f0051c1.css",
+    "static/js/main.07bab5ab.js"
   ]
 }
