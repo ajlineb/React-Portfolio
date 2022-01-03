@@ -74,6 +74,11 @@ body {
   border-radius: 20%;
 }
 
+#resume:hover {
+  filter: brightness(1.5);
+  transform: scale(1.1);
+}
+
 .text-block {
   position: absolute;
   top: 50%;
