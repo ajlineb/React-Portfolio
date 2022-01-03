@@ -8,10 +8,10 @@ export default function Tabs({ currentPage, pageChange }) {
   return (
     <Row className="banner align-items-center">
       <Col md="6">
-        <h1 className="name display-4">Anthony Linebaugh</h1>
+        <h1 className="name display-6">Anthony Linebaugh</h1>
       </Col>
       <Col md="6">
-        <ul className="nav nav-pills justify-content-center display-4 tabs">
+        <ul className="nav nav-pills justify-content-center display-6 tabs">
           <li className="nav-item">
             <a
               href="#home"

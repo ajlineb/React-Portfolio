@@ -5,8 +5,8 @@ export default function Works() {
   return (
     <div className="info">
       <h1 className="title">Works</h1>
-      <Row className="align-items-center">
-        <Col md="6" className="image-container">
+      <Row className="align-items-center image-rows">
+        <Col sm="6" className="image-container">
           <a href="https://jparris3213.github.io/UNC_Project_1_Group/">
             <img
               id="showcase"
@@ -16,7 +16,7 @@ export default function Works() {
             <p className="text-block">Astronomical Guidance</p>
           </a>
         </Col>
-        <Col md="6" className="image-container">
+        <Col sm="6" className="image-container">
           <a href="https://philip-project2.herokuapp.com/">
             <img
               id="showcase"
@@ -27,8 +27,8 @@ export default function Works() {
           </a>
         </Col>
       </Row>
-      <Row className="align-items-center">
-        <Col md="6" className="image-container">
+      <Row className="align-items-center image-rows">
+        <Col sm="6" className="image-container">
           <a href="https://github.com/ajlineb/Object-Relational-Mapping-E-Commerce-Backend">
             <img
               id="showcase"
@@ -38,7 +38,7 @@ export default function Works() {
             <p className="text-block">E-Commerce Backend</p>
           </a>
         </Col>
-        <Col md="6" className="image-container">
+        <Col sm="6" className="image-container">
           <a href="https://budget-tracker-0-1.herokuapp.com/">
             <img
               id="showcase"
@@ -49,8 +49,8 @@ export default function Works() {
           </a>
         </Col>
       </Row>
-      <Row className="align-items-center">
-        <Col md="6" className="image-container">
+      <Row className="align-items-center image-rows">
+        <Col sm="6" className="image-container">
           <a href="https://github.com/ajlineb/SQL-Employee-Tracker">
             <img
               id="showcase"
@@ -60,7 +60,7 @@ export default function Works() {
             <p className="text-block">SQL Employee Tracker</p>
           </a>
         </Col>
-        <Col md="6" className="image-container">
+        <Col sm="6" className="image-container">
           <a href="https://ajlineb.github.io/Weather_Dashboard/">
             <img
               id="showcase"

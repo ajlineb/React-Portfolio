@@ -25,9 +25,6 @@ export default function Contact() {
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
-              <small id="emailHelp" class="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
               <div class="form-group">
                 <label for="textField">Leave a message!</label>
                 <textarea

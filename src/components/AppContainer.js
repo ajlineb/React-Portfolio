@@ -45,9 +45,6 @@ export default function AppContainer() {
               alt="linkedin"
             />
           </a>
-          <a>
-            <img></img>
-          </a>
         </div>
       </div>
     </div>
