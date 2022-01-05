@@ -45,8 +45,8 @@ export default function Contact() {
             Other means of Communication!
           </h1>
           <br></br>
-          <h2 className="comm-info">Phone: 984-265-0534</h2>
-          <h2 className="comm-info">Email: anthonylinebaugh95@gmail.com</h2>
+          <h3 className="comm-info">Phone: 984-265-0534</h3>
+          <h3 className="comm-info">Email: anthonylinebaugh95@gmail.com</h3>
         </Col>
       </Row>
     </div>
