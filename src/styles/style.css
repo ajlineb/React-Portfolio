@@ -93,6 +93,27 @@ body {
   transform: scale(1.1);
 }
 
+#knownLang {
+  height: 150px;
+  width: 150px;
+}
+
+.languages-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.other-comms-title {
+  text-align: center;
+}
+
+.comm-info {
+  margin: auto;
+  text-align: center;
+}
+
 .text-block {
   position: absolute;
   top: 50%;
@@ -118,6 +139,13 @@ body {
 .title {
   font-weight: 800;
   color: antiquewhite;
+}
+
+.contact-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .form-container {

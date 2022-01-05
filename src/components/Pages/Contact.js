@@ -4,41 +4,49 @@ import { Row, Col } from "react-bootstrap";
 export default function Contact() {
   return (
     <div className="info">
-      <h1 className="title">Contact</h1>
-      <Row className="align-items-center">
+      <Row className="align-items-center contact-title">
         <Col md="6">
+          <h1 className="title">Contact</h1>
           <form className="form-container">
-            <div class="form-group">
-              <label for="name">Name</label>
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="name"
                 aria-describedby="emailHelp"
                 placeholder="Enter Name"
               />
-              <label for="exampleInputEmail1">Email address</label>
+              <label htmlFor="exampleInputEmail1">Email address</label>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Enter email"
               />
-              <div class="form-group">
-                <label for="textField">Leave a message!</label>
+              <div className="form-group">
+                <label htmlFor="textField">Leave a message!</label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="textField"
                   rows="10"
                   placeholder="Enter Text"
                 ></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-success">
+            <button type="submit" className="btn btn-success">
               Submit
             </button>
           </form>
+        </Col>
+        <Col md="6">
+          <h1 className="title other-comms-title">
+            Other means of Communication!
+          </h1>
+          <br></br>
+          <h2 className="comm-info">Phone: 984-265-0534</h2>
+          <h2 className="comm-info">Email: anthonylinebaugh95@gmail.com</h2>
         </Col>
       </Row>
     </div>
