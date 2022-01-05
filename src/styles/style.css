@@ -112,7 +112,7 @@ body {
 .comm-info {
   margin: auto;
   text-align: center;
-  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .text-block {
