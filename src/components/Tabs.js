@@ -25,7 +25,7 @@ export default function Tabs({ currentPage, pageChange }) {
           </li>
           <li className="nav-item">
             <a
-              href="#home"
+              href="#works"
               onClick={() => pageChange("Works")}
               className={
                 currentPage === "Works" ? "nav-link active" : "nav-link"
@@ -36,7 +36,7 @@ export default function Tabs({ currentPage, pageChange }) {
           </li>
           <li className="nav-item">
             <a
-              href="#home"
+              href="#contact"
               onClick={() => pageChange("Contact")}
               className={
                 currentPage === "Contact" ? "nav-link active" : "nav-link"
@@ -47,7 +47,7 @@ export default function Tabs({ currentPage, pageChange }) {
           </li>
           <li className="nav-item">
             <a
-              href="#home"
+              href="#resume"
               onClick={() => pageChange("Resume")}
               className={
                 currentPage === "Resume" ? "nav-link active" : "nav-link"
