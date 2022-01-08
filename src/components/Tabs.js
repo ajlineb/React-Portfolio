@@ -11,14 +11,12 @@ export default function Tabs({ currentPage, pageChange }) {
         <h1 className="name display-6">Anthony Linebaugh</h1>
       </Col>
       <Col md="6">
-        <ul className="nav nav-pills justify-content-center display-6 tabs">
+        <ul className="tabs-container justify-content-center display-6">
           <li className="nav-item">
             <a
               href="#home"
               onClick={() => pageChange("Home")}
-              className={
-                currentPage === "Home" ? "nav-link active" : "nav-link"
-              }
+              className={currentPage === "Home" ? "tabs tab-active" : "tabs"}
             >
               Home
             </a>
@@ -27,9 +25,7 @@ export default function Tabs({ currentPage, pageChange }) {
             <a
               href="#works"
               onClick={() => pageChange("Works")}
-              className={
-                currentPage === "Works" ? "nav-link active" : "nav-link"
-              }
+              className={currentPage === "Works" ? "tabs tab-active" : "tabs"}
             >
               Works
             </a>
@@ -38,9 +34,7 @@ export default function Tabs({ currentPage, pageChange }) {
             <a
               href="#contact"
               onClick={() => pageChange("Contact")}
-              className={
-                currentPage === "Contact" ? "nav-link active" : "nav-link"
-              }
+              className={currentPage === "Contact" ? "tabs tab-active" : "tabs"}
             >
               Contact
             </a>
@@ -49,9 +43,7 @@ export default function Tabs({ currentPage, pageChange }) {
             <a
               href="#resume"
               onClick={() => pageChange("Resume")}
-              className={
-                currentPage === "Resume" ? "nav-link active" : "nav-link"
-              }
+              className={currentPage === "Resume" ? "tabs tab-active" : "tabs"}
             >
               Resume
             </a>
