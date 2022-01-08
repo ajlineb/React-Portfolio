@@ -1,4 +1,4 @@
-li {
+.banner li {
   padding: 2rem;
 }
 
@@ -110,6 +110,17 @@ body {
 }
 
 .comm-info {
+  margin: auto;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.resume-container {
+  min-width: auto;
+  height: auto;
+}
+
+.resume-info {
+  font-size: 1.2rem;
   margin: auto;
   text-align: center;
   overflow-wrap: break-word;
