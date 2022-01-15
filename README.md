@@ -2,20 +2,12 @@
 
 ## Table of Contents
 
-- [Installation](#installation)
 - [Description](#description)
 - [URLs](#urls)
-- [Usage](#usage)
 - [Images](#images)
 - [Credits](#credits)
 - [License](#license)
-- [Contributions](#contributions)
-- [Tests](#tests)
 - [Questions](#questions)
-
-## Installation
-
-no installation
 
 ## Description
 
@@ -27,13 +19,9 @@ GitHub repository: https://github.com/ajlineb/React-Portfolio/tree/gh-pages
 
 Webpage: https://ajlineb.github.io/React-Portfolio/#home
 
-## Usage
-
-This applicaiton will show my developed skills from the past to present using React.
-
 ## Images
 
-![alt website](./src/components/images/webpage.png)
+![alt website](./src/images/webpage.png)
 
 ## Credits
 
@@ -49,14 +37,6 @@ Linkedin for their image
 ## License
 
 MIT License
-
-## Contributions
-
-n/a
-
-## Tests
-
-n/a
 
 ## Questions
 
