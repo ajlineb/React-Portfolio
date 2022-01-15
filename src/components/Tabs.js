@@ -1,27 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function Tabs() {
+export default function Tabs() {
+  const tabs = ["/home", "/works", "/contact", "/resume"];
+  const [active, setActive] = useState(tabs[0]);
+
   return (
-    <Row className="banner align-items-center">
-      <Col md="6">
-        <ul className="tabs-container justify-content-center display-6">
-          <li className="nav-item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/works">Works</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/resume">Resume</Link>
-          </li>
-        </ul>
-      </Col>
-    </Row>
+    <ul className="tabs-container justify-content-center display-6">
+      {tabs.map((tab) => (
+        <li>
+          <Link
+            to={tab}
+            key={tab}
+            active={active === tab}
+            onClick={() => setActive(tab)}
+            className={
+              window.location.pathname === tab ? "tabs tab-active" : "tabs"
+            }
+          >
+            {tab.substring(1).charAt(0).toUpperCase() +
+              tab.slice(2, tab.length)}
+          </Link>
+        </li>
+      ))}
+      {/* <li className="nav-item">
+        <Link to="/home">Home</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/works">Works</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/contact">Contact</Link>
+      </li>
+      <li className="nav-item">
+        <Link to="/resume">Resume</Link>
+      </li> */}
+    </ul>
   );
 }
 
