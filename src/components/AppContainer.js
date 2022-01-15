@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Tabs from "./Tabs";
-import Home from "./Pages/Home";
-import Works from "./Pages/Works";
-import Contact from "./Pages/Contact";
-import Resume from "./Pages/Resume";
+import Home from "../Pages/Home";
+import Works from "../Pages/Works";
+import Contact from "../Pages/Contact";
+import Resume from "../Pages/Resume";
 
 export default function AppContainer() {
   //will determine which tab the user is on
