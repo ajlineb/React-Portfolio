@@ -46,7 +46,7 @@ export default function Resume() {
             <h1>Languages and Experience</h1>
             <ul>
               {experiences.map((experience) => (
-                <li>{experience}</li>
+                <li key={experience.id}>{experience}</li>
               ))}
             </ul>
           </div>
