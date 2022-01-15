@@ -25,7 +25,7 @@ export default function Resume() {
       <Row className="align-items-center ">
         <Col md="6" className="pdf-container">
           <embed
-            src={require("../pdf/Resume_7.0.pdf")}
+            src={require("../pdf/AnthonyLinebaughResume2022.pdf")}
             width={"1000px"}
             height={"1000px"}
           ></embed>
