@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   max-width: 100%;
-  background: url(../components/images/nightSky.jpg);
+  background: url(../images/nightSky.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .banner {
-  background-image: url("../components/images/banner.jpg");
+  background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
