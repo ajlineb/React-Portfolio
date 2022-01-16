@@ -28,7 +28,7 @@ export default function Contact() {
       setTextErr(false);
     }
     if (!nameErr && !emailErr && !textErr) {
-      console.log({ nameErr, emailErr, textErr });
+      //console.log({ nameErr, emailErr, textErr });
       setName("");
       setEmail("");
       setText("");
