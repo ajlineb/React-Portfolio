@@ -15,7 +15,7 @@ An application to showcase not only my previous works but to show them using a R
 
 ## URLs
 
-GitHub repository: https://github.com/ajlineb/React-Portfolio/tree/gh-pages
+GitHub repository: https://github.com/ajlineb/React-Portfolio
 
 Webpage: https://ajlineb.github.io/React-Portfolio/#home
 
