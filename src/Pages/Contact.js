@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import { validEmail, validName, validText } from "../utils/regex";
 import { Row, Col } from "react-bootstrap";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [nameErr, setNameErr] = useState(true);
+  const [email, setEmail] = useState("");
+  const [emailErr, setEmailErr] = useState(true);
+  const [text, setText] = useState("");
+  const [textErr, setTextErr] = useState(true);
+
+  const validate = (e) => {
+    e.preventDefault();
+    if (!validName.test(name)) {
+      setNameErr(true);
+    } else {
+      setNameErr(false);
+    }
+    if (!validEmail.test(email)) {
+      setEmailErr(true);
+    } else {
+      setEmailErr(false);
+    }
+    if (!validText.test(text)) {
+      setTextErr(true);
+    } else {
+      setTextErr(false);
+    }
+    if (!nameErr && !emailErr && !textErr) {
+      console.log({ nameErr, emailErr, textErr });
+      setName("");
+      setEmail("");
+      setText("");
+    }
+  };
+
   return (
     <div className="info">
       <Row className="align-items-center contact-title">
@@ -11,19 +44,22 @@ export default function Contact() {
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input
-                type="email"
+                type="text"
                 className="form-control"
                 id="name"
                 aria-describedby="emailHelp"
                 placeholder="Enter Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <label htmlFor="exampleInputEmail1">Email address</label>
               <input
                 type="email"
                 className="form-control"
                 id="exampleInputEmail1"
-                aria-describedby="emailHelp"
                 placeholder="Enter email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <div className="form-group">
                 <label htmlFor="textField">Leave a message!</label>
@@ -31,14 +67,23 @@ export default function Contact() {
                   className="form-control"
                   id="textField"
                   rows="10"
-                  placeholder="Enter Text"
+                  placeholder="Enter Text under 200 characters"
+                  value={text}
+                  onChange={(e) => setText(e.target.value)}
                 ></textarea>
               </div>
             </div>
-            <button type="submit" className="btn btn-success">
+            <button
+              type="submit"
+              className="btn btn-success"
+              onClick={validate}
+            >
               Submit
             </button>
           </form>
+          {nameErr && <p>Your name is not valid</p>}
+          {emailErr && <p>Your email is invalid</p>}
+          {textErr && <p>You must have a valid entry!</p>}
         </Col>
         <Col md="6">
           <h1 className="title other-comms-title">
