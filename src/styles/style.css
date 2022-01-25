@@ -54,6 +54,10 @@ a:hover {
   border: solid 5px rgb(82, 7, 82);
 }
 
+#linkContainer {
+  position: relative;
+}
+
 #gitLink {
   margin: 1rem;
   background-color: black;
@@ -86,6 +90,17 @@ a:hover {
   width: 150px;
 }
 
+#workInfo {
+  background: rgba(41, 40, 40, 0.678);
+  border: solid 1px rgb(82, 7, 82);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  text-align: center;
+  max-width: 65%;
+  min-height: 6rem;
+}
+
 .name {
   font-weight: 900;
 }
@@ -113,6 +128,11 @@ a:hover {
 .tabs-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.tabs-container li {
+  display: inline-block;
+  padding: auto;
 }
 
 .tabs {
@@ -168,6 +188,7 @@ a:hover {
 .image-container {
   position: relative;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .info {

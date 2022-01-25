@@ -6,7 +6,7 @@ export default function Tabs() {
   const [active, setActive] = useState(tabs[0]);
 
   return (
-    <ul className="tabs-container justify-content-center display-6">
+    <ul className="justify-content-center display-6">
       {tabs.map((tab) => (
         <li>
           <Link
