@@ -32,7 +32,7 @@ export default function Resume() {
           <h1>
             If the PDF is not showing, here is a link to my Resume!
             <br></br>
-            <a href="https://drive.google.com/file/d/1lhjm6W-jP2gI-osWlOw8NYRl_nVAVJYN/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/14CHrwzS_XS9ysWjcta1b9dHoajlVi69e/view?usp=sharing">
               <img
                 id="resume"
                 src={require("../images/paper_image.png")}
