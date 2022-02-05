@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Tabs() {
-  const tabs = ["/React-Portfolio", "/works", "/contact", "/resume"];
+  const tabs = ["/React-Portfolio/", "/works", "/contact", "/resume"];
   const [active, setActive] = useState(tabs[0]);
   console.log(tabs[0]);
 
