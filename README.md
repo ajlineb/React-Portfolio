@@ -17,7 +17,7 @@ An application to showcase not only my previous works but to show them using a R
 
 GitHub repository: https://github.com/ajlineb/React-Portfolio
 
-Webpage: https://ajlineb.github.io/React-Portfolio/#home
+Webpage: https://ajlineb.github.io/React-Portfolio/
 
 ## Images
 
