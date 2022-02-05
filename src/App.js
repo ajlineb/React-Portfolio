@@ -17,6 +17,7 @@ function App() {
   return (
     <Router>
       <Header />
+
       <Routes>
         <Route exact path="/home" element={<Home />} />
         <Route exact path="/works" element={<Works />} />
@@ -25,6 +26,7 @@ function App() {
 
         <Route path="*" element={<Home />} />
       </Routes>
+
       <Footer />
     </Router>
   );

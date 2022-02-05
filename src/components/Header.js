@@ -3,10 +3,6 @@ import React from "react";
 import Tabs from "./Tabs";
 import { Row, Col } from "react-bootstrap";
 
-{
-  /* <Row className="banner align-items-center"></Row> */
-}
-
 function Header() {
   return (
     <div>
