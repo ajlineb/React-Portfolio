@@ -12,7 +12,7 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "An application used for looking up best times to see both astroids and the ISS in your area! ",
+    info: "An application used for looking up best times to see both astroids and the ISS in your area! Uses API calls.",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "Do you enjoy playing Dungeons and Dragons!? Well this application will sure help with keeping track of all your items and inventory along with your gold count! Just create an account and get started!",
+    info: "Application for Dungeons and Dragons players for keeping track of gold, items, and store fluctuations. Uses React, graphQL, JWT, bcrypt.",
   },
   {
     id: 3,
@@ -74,7 +74,7 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "An appication that will allow for offline access and functionality. The user is able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.",
+    info: "An application that delivers a Progressive web app that can be used online and offline.",
   },
   {
     id: 6,

@@ -52,15 +52,19 @@ export default function Contact() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              <label htmlFor="exampleInputEmail1">Email address</label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                placeholder="Enter email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
+              {nameErr && <p id="err">Your name is not valid</p>}{" "}
+              <div>
+                <label htmlFor="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  className="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Enter email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              {emailErr && <p id="err">Your email is not valid</p>}
               <div className="form-group">
                 <label htmlFor="textField">Leave a message!</label>
                 <textarea
@@ -71,6 +75,7 @@ export default function Contact() {
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                 ></textarea>
+                {textErr && <p id="err">You must have a valid entry!</p>}
               </div>
             </div>
             <button
@@ -81,9 +86,6 @@ export default function Contact() {
               Submit
             </button>
           </form>
-          {nameErr && <p>Your name is not valid</p>}
-          {emailErr && <p>Your email is invalid</p>}
-          {textErr && <p>You must have a valid entry!</p>}
         </Col>
         <Col md="6">
           <h1 className="title other-comms-title">

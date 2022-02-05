@@ -97,8 +97,14 @@ a:hover {
   padding: 1rem;
   display: inline-block;
   text-align: center;
-  max-width: 65%;
+  max-width: 80%;
   min-height: 6rem;
+}
+
+#err {
+  background: rgba(255, 0, 0, 0.308);
+  display: inline-block;
+  border-radius: 0.3rem;
 }
 
 .name {
