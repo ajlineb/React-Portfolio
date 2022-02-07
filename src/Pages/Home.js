@@ -34,7 +34,7 @@ export default function Home() {
             solve real world issues. Developing highly responsive webpages with
             javascript that are both mobile friendly and accessable for all
             types of users. Checkout some of my works in the next tab, they are
-            some of the webpages I have worked on my own and two of which were
+            some of the webpages I have worked on my own and three of which were
             projects with a team!
           </p>
         </Col>
