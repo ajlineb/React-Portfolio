@@ -26,11 +26,11 @@ export default function Resume() {
         <Col md="6" className="pdf-container">
           <object
             data={require("../pdf/AnthonyLinebaughResume2022.pdf")}
-            width={"1000px"}
+            width={"900px"}
             height={"1000px"}
           >
             Your web browser does not support a PDF plugin. Instead you can try
-            clicking below!
+            clicking below to download my resume instead.
             <br></br>
             <a href="https://drive.google.com/file/d/14CHrwzS_XS9ysWjcta1b9dHoajlVi69e/view?usp=sharing">
               <img
