@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 
 function Header() {
   return (
-    <div>
+    <nav>
       <Row className="banner align-items-center">
         <Col sm="6">
           <h1 className="name">Anthony Linebaugh</h1>
@@ -14,7 +14,7 @@ function Header() {
           <Tabs />
         </Col>
       </Row>
-    </div>
+    </nav>
   );
 }
 

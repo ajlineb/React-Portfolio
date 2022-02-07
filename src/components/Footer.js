@@ -17,6 +17,10 @@ export default function Footer() {
           alt="linkedin"
         />
       </a>
+      <div>
+        <p className="closing">Created By Anthony Linebaugh with ❤️</p>
+        <p className="closing">© 2022</p>
+      </div>
     </div>
   );
 }
