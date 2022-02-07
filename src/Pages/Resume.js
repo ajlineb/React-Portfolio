@@ -30,17 +30,15 @@ export default function Resume() {
             height={"1000px"}
           >
             Your web browser does not support a PDF plugin. Instead you can try
-            <h1>
-              If the PDF is not showing, here is a link to my Resume!
-              <br></br>
-              <a href="https://drive.google.com/file/d/14CHrwzS_XS9ysWjcta1b9dHoajlVi69e/view?usp=sharing">
-                <img
-                  id="resume"
-                  src={require("../images/paper_image.png")}
-                  alt="document"
-                ></img>
-              </a>
-            </h1>
+            clicking below!
+            <br></br>
+            <a href="https://drive.google.com/file/d/14CHrwzS_XS9ysWjcta1b9dHoajlVi69e/view?usp=sharing">
+              <img
+                id="resume"
+                src={require("../images/paper_image.png")}
+                alt="document"
+              ></img>
+            </a>
           </object>
         </Col>
         <Col md="6" className="resume-container">
