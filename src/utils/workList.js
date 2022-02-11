@@ -42,7 +42,7 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "A forum for posting your thoughts and Ideas! Uses mySQL with JawsDB in heroku for a fully deployed application!",
+    info: "A forum for posting your thoughts and ideas! Uses mySQL with JawsDB in heroku for a fully deployed application!",
   },
   {
     id: 4,
@@ -63,7 +63,7 @@ const Data = [
   },
   {
     id: 5,
-    projectName: "Budget Tracker Progressive Web App",
+    projectName: "Budget Tracker",
     deployLink: "https://budget-tracker-0-1.herokuapp.com/",
     img: {
       src: "https://raw.githubusercontent.com/ajlineb/Proggressive-Budget-Tracker/main/images/BudgetTracker.png",
@@ -74,7 +74,7 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "An application that delivers a Progressive web app that can be used online and offline.",
+    info: "An application that delivers a progressive web app that can be used online and offline.",
   },
   {
     id: 6,
@@ -93,7 +93,7 @@ const Data = [
   },
   {
     id: 7,
-    projectName: "Weather Dashboard APIs",
+    projectName: "Weather Dashboard Application",
     deployLink: "https://ajlineb.github.io/Weather_Dashboard/",
     img: {
       src: "https://raw.githubusercontent.com/ajlineb/Weather_Dashboard/main/Assets/Images/Weather_Dashboard.png",
