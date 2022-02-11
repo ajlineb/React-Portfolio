@@ -9,6 +9,8 @@ export default function Resume() {
     "jQuery",
     "Responsive applications",
     "Mobile First Development",
+    "Front-End Development",
+    "Back-End Development",
     "Object Oriented Programming",
     "nodeJS",
     "APIs",
