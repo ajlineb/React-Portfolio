@@ -9,6 +9,7 @@ export default function Tabs() {
 
   const [navbarOpen, setNavbarOpen] = useState(false); //for toggling tab menu
 
+  //handles the name of the tabs
   function handleTab(tab) {
     if (tab === tabs[0]) {
       return "About";
@@ -22,15 +23,17 @@ export default function Tabs() {
       return "Resume";
     }
   }
-
+  //handles the toggle for the tabs bar
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
   };
-
+  //closes the tab bar
   const closeMenu = () => {
     setNavbarOpen(false);
   };
+
   const path = window.location.pathname.split("/");
+
   return (
     <nav className="navBar">
       <button onClick={handleToggle}>
@@ -63,8 +66,6 @@ export default function Tabs() {
                 path[2] === tab ? "tabs nav-item tab-active " : "tabs nav-item"
               }
             >
-              {/* {tab.substring(1).charAt(0).toUpperCase() +
-                tab.slice(2, tab.length)} */}
               {handleTab(tab)}
             </Link>
           </li>
