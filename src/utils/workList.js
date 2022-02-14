@@ -1,7 +1,7 @@
 const Data = [
   {
     id: 1,
-    projectName: "Astromical Guidace",
+    projectName: "Astromical Guidance",
     deployLink: "https://ajlineb.github.io/Astromical-Guidance-Application/",
     img: {
       src: require("../images/AstroProject.png"),
