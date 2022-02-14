@@ -33,7 +33,6 @@ export default function Tabs() {
   };
 
   const path = window.location.pathname.split("/");
-
   return (
     <nav className="navBar">
       <button onClick={handleToggle}>
