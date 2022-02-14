@@ -46,13 +46,12 @@ export default function Resume() {
         <Col md="6" className="resume-container">
           <div className="resume-info">
             <h1>Languages and Experience</h1>
-            <ul>
-              {experiences.map((experience) => (
-                <li key={experience.id} className="exp-nolist">
-                  {experience}
-                </li>
-              ))}
-            </ul>
+
+            {experiences.map((experience) => (
+              <p key={experience.id} className="exp-nolist">
+                {experience}
+              </p>
+            ))}
           </div>
         </Col>
       </Row>
