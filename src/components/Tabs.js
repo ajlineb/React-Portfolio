@@ -4,7 +4,7 @@ import { IoIosOptions } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export default function Tabs() {
-  const tabs = ["/React-Portfolio/", "/works", "/contact", "/resume"];
+  const tabs = ["about", "works", "contact", "resume"];
   const [active, setActive] = useState(tabs[0]); //for toggling the active tab
 
   const [navbarOpen, setNavbarOpen] = useState(false); //for toggling tab menu
@@ -30,7 +30,7 @@ export default function Tabs() {
   const closeMenu = () => {
     setNavbarOpen(false);
   };
-
+  const path = window.location.pathname.split("/");
   return (
     <nav className="navBar">
       <button onClick={handleToggle}>
@@ -60,9 +60,7 @@ export default function Tabs() {
                 closeMenu();
               }}
               className={
-                window.location.pathname === tab
-                  ? "tabs nav-item tab-active "
-                  : "tabs nav-item"
+                path[2] === tab ? "tabs nav-item tab-active " : "tabs nav-item"
               }
             >
               {/* {tab.substring(1).charAt(0).toUpperCase() +
