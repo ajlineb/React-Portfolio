@@ -15,7 +15,7 @@ import Resume from "./Pages/Resume";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/React-Portfolio">
       <Header />
 
       <Routes>
