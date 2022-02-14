@@ -18,8 +18,11 @@ export default function Footer() {
         />
       </a>
       <div>
-        <p className="closing">Created By Anthony Linebaugh with ❤️</p>
-        <p className="closing">© 2022</p>
+        <p className="closing">
+          Created By Anthony Linebaugh with ❤️{" "}
+          <a href="https://github.com/ajlineb/React-Portfolio"> Source Code</a>
+        </p>
+        <p className="closing">© 2022 </p>
       </div>
     </div>
   );
