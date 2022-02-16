@@ -65,9 +65,6 @@ export default function Resume() {
             <h1>Languages and Experience</h1>
             <Row className="exp-container">
               {experiences.map((experience, index) =>
-                // <Col key={experience.id} className="exp-nolist" md="6">
-                //   {experience}
-                // </Col>
                 handleExperience(experience, index)
               )}
             </Row>
