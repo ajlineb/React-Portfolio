@@ -18,8 +18,8 @@ export default function Home() {
             only peaked my interests. I developed highly responsive code for
             advanced calculations and graphical outputs using data from excel
             sheets. I graduated college with my Biomedical engineering degree,
-            but still felt that itch for coding something, turning my ideas into
-            something everyone else can see and use.
+            but still felt that itch for coding, turning my ideas into something
+            everyone else can see and use.
           </p>
           <p>
             I jumped into UNC Chapel Hill's boot camp program to do just that! I
