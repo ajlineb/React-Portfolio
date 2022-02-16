@@ -257,6 +257,26 @@ a:hover {
   list-style: none;
 }
 
+.exp-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.bkgrd-grey {
+  background-color: #1a1927;
+  display: inline-block;
+  min-width: auto;
+  padding-bottom: 1rem;
+}
+
+.bkgrd-white {
+  background-color: rgba(255, 255, 255, 0.137);
+  display: inline-block;
+  min-width: auto;
+  padding-bottom: 1rem;
+}
+
 .loading {
   height: 100px;
   width: 150px;

@@ -21,6 +21,22 @@ export default function Resume() {
     "React",
   ];
 
+  function handleExperience(exp, id) {
+    if (id % 2) {
+      return (
+        <Col key={id} className="exp-nolist bkgrd-grey" md="6">
+          {exp}
+        </Col>
+      );
+    } else {
+      return (
+        <Col key={id} className="exp-nolist bkgrd-white" md="6">
+          {exp}
+        </Col>
+      );
+    }
+  }
+
   return (
     <div className="info">
       <h1 className="title">Resume</h1>
@@ -46,12 +62,14 @@ export default function Resume() {
         <Col md="6" className="resume-container">
           <div className="resume-info">
             <h1>Languages and Experience</h1>
-
-            {experiences.map((experience) => (
-              <p key={experience.id} className="exp-nolist">
-                {experience}
-              </p>
-            ))}
+            <Row className="exp-container">
+              {experiences.map((experience, index) =>
+                // <Col key={experience.id} className="exp-nolist" md="6">
+                //   {experience}
+                // </Col>
+                handleExperience(experience, index)
+              )}
+            </Row>
           </div>
         </Col>
       </Row>
