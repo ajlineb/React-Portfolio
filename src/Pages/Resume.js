@@ -21,6 +21,7 @@ export default function Resume() {
     "React",
   ];
 
+  //used to make every odd/even skill contain different css
   function handleExperience(exp, id) {
     if (id % 2) {
       return (
