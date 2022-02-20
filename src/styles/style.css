@@ -335,6 +335,7 @@ a:hover {
 }
 
 .menuNav {
+  transition: width 600ms, background-color 800ms;
   overflow-y: scroll;
   list-style: none;
   position: fixed;
@@ -350,6 +351,7 @@ a:hover {
 }
 
 .menuNav.showMenu {
+  transition: width 600ms;
   width: 100%;
   background-color: rgb(26, 26, 34);
   background-repeat: no-repeat;
