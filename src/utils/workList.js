@@ -2,12 +2,13 @@ const Data = [
   {
     id: 1,
     projectName: "Astromical Guidance",
-    deployLink: "https://ajlineb.github.io/Astromical-Guidance-Application/",
+    deployLink: "https://jparris3213.github.io/UNC_Project_1_Group/",
     img: {
       src: require("../images/AstroProject.png"),
       alt: "Space website",
     },
-    gitLink: "https://github.com/ajlineb/Astromical-Guidance-Application",
+    gitLink:
+      "https://github.com/jparris3213/UNC_Project_1_Group/deployments/activity_log?environment=github-pages",
     gitImg: {
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
