@@ -27,7 +27,7 @@ export default function Tabs() {
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
   };
-  //closes the tab bar
+  //closes the tab bar after clicking nav item
   const closeMenu = () => {
     setNavbarOpen(false);
   };

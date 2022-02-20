@@ -156,6 +156,7 @@ a:hover {
 
 .tabs-container li {
   display: inline-block;
+  min-width: 10rem;
 }
 
 .tabs {
@@ -339,11 +340,6 @@ a:hover {
   position: fixed;
   top: 0;
   /* background-image: url("../images/banner.jpg"); */
-  background-color: rgb(26, 26, 34);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-left: solid 0.1px rgb(32, 32, 32);
   right: 0;
   bottom: 0;
   height: 100vh;
@@ -355,6 +351,11 @@ a:hover {
 
 .menuNav.showMenu {
   width: 100%;
+  background-color: rgb(26, 26, 34);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-left: solid 0.1px rgb(32, 32, 32);
 }
 
 .menuNav li:first-child {
