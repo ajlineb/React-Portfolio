@@ -7,8 +7,7 @@ const Data = [
       src: require("../images/AstroProject.png"),
       alt: "Space website",
     },
-    gitLink:
-      "https://github.com/jparris3213/UNC_Project_1_Group/deployments/activity_log?environment=github-pages",
+    gitLink: "https://github.com/jparris3213/UNC_Project_1_Group",
     gitImg: {
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
