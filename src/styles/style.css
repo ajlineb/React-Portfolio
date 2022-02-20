@@ -253,6 +253,11 @@ a:hover {
   max-width: 100%;
 }
 
+.errPDF {
+  font-weight: 900;
+  color: rgb(216, 206, 116);
+}
+
 .exp-nolist {
   list-style: none;
 }
