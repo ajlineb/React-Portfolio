@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 export default function Resume() {
+  //list of experiences (can easily add)
   const experiences = [
     "HTML",
     "CSS",
@@ -19,6 +20,8 @@ export default function Resume() {
     "MySQL-Sequelize",
     "mongoDB-mongoose",
     "React",
+    "Debugging",
+    "Testing (Jest)",
   ];
 
   //used to make every odd/even skill contain different css
