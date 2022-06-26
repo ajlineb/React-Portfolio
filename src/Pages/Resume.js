@@ -61,7 +61,7 @@ export default function Resume() {
             Your web browser does not support a PDF plugin. Instead you can try
             clicking below to download my resume instead.
             <br></br>
-            <a href="https://drive.google.com/file/d/14CHrwzS_XS9ysWjcta1b9dHoajlVi69e/view?usp=sharing">
+            <a href="https://docs.google.com/document/d/1hxIrIzITbFgdOB8_r41lFSwfGZjihGCgsikPUkM2rAg/edit?usp=sharing">
               <img
                 id="resume"
                 src={require("../images/paper_image.png")}
