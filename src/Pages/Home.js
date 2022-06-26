@@ -13,13 +13,13 @@ export default function Home() {
       <Row>
         <Col md="6">
           <p>
-            Hello! Every since highschool I have always been deeply interested
-            in coding. During college I got to use MATLAB for engineers and it
-            only peaked my interests. I developed highly responsive code for
-            advanced calculations and graphical outputs using data from excel
-            sheets. I graduated college with my Biomedical engineering degree,
-            but still felt that itch for coding, turning my ideas into something
-            everyone else can see and use.
+            Hello! Ever since highschool I have always been deeply interested in
+            coding. During college I got to use MATLAB for engineers and it only
+            peaked my interests. I developed highly responsive code for advanced
+            calculations and graphical outputs using data from excel sheets. I
+            graduated college with my Biomedical Engineering degree, but still
+            felt that itch for coding, turning my ideas into something everyone
+            else can see and use.
           </p>
           <p>
             I jumped into UNC Chapel Hill's boot camp program to do just that! I
@@ -32,7 +32,8 @@ export default function Home() {
             In my off time I enjoy creating 3D models to use in virtual reality
             environments, and learning more about computers and their hardware.
             I have even gone so far as to build my own custom PC that I use to
-            do a lot of my work with currently but to also play video games.
+            do a lot of my work with currently but to also relax and play video
+            games.
           </p>
         </Col>
         <Col>
