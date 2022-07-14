@@ -27,7 +27,9 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "Application for Dungeons and Dragons players for keeping track of gold, items, and store fluctuations. Uses React, graphQL, JWT, bcrypt.",
+    info: "Application for Dungeons and Dragons players for keeping track of gold, items, and store fluctuations. Uses React, graphQL, JWT, bcrypt. ",
+    important: "User: guestuser101@gmail.com | Password:guestuser101",
+    style: "fst-italic fw-bold text-info",
   },
   {
     id: 3,
@@ -42,7 +44,9 @@ const Data = [
       src: require("../images/GitHub-Mark-Light-64px.png"),
       alt: "github",
     },
-    info: "A forum for posting your thoughts and ideas! Uses mySQL with JawsDB in heroku for a fully deployed application!",
+    info: "A forum for posting your thoughts and ideas! Uses mySQL with JawsDB in heroku for a fully deployed application! ",
+    important: "User: guestUser101@gmail.com | Password: Guest101",
+    style: "fst-italic fw-bold text-info",
   },
   {
     id: 4,

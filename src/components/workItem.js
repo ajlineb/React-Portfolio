@@ -4,7 +4,6 @@ import { Col } from "react-bootstrap";
 import Loading from "../utils/Loading";
 
 export default function WorkItem() {
-  console.log(data.length);
   return (
     <>
       {data.length ? (
@@ -22,7 +21,10 @@ export default function WorkItem() {
                 </p>
               </a>
 
-              <p id="workInfo">{d.info}</p>
+              <p id="workInfo">
+                {d.info}
+                <span className={d.style}>{d.important}</span>
+              </p>
             </Col>
           );
         })
