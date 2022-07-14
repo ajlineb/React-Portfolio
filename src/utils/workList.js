@@ -28,7 +28,7 @@ const Data = [
       alt: "github",
     },
     info: "Application for Dungeons and Dragons players for keeping track of gold, items, and store fluctuations. Uses React, graphQL, JWT, bcrypt. ",
-    important: "User: guestuser101@gmail.com | Password:guestuser101",
+    important: "User: guestuser101@gmail.com | Password: guestuser101",
     style: "fst-italic fw-bold text-info",
   },
   {
