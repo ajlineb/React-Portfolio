@@ -110,6 +110,21 @@ const Data = [
     },
     info: "Built from the ground up, this app allows users to look up their city and see the current weather and future weather for the next 5 days!",
   },
+  {
+    id: 8,
+    projectName: "React Weather Application",
+    deployLink: "https://ajlineb.github.io/React-Weather/",
+    img: {
+      src: "https://raw.githubusercontent.com/ajlineb/React-Weather/main/src/img/webpage_weather.png",
+      alt: "Forum webpage",
+    },
+    gitLink: "https://github.com/ajlineb/React-Weather",
+    gitImg: {
+      src: require("../images/GitHub-Mark-Light-64px.png"),
+      alt: "github",
+    },
+    info: "Application for displaying current weather using components, will show a seven day forcast and much more!",
+  },
 ];
 
 export default Data;
