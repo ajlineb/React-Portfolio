@@ -17,7 +17,7 @@ const Data = [
   {
     id: 2,
     projectName: "Narrative Treasures",
-    deployLink: "https://narrative0treasures.herokuapp.com/",
+    deployLink: "https://narrative-treasures.onrender.com/",
     img: {
       src: require("../images/NarrativeTreasures.png"),
       alt: "Space website",
