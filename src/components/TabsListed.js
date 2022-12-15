@@ -1,0 +1,71 @@
+import React, { useState } from "react";
+import { MdClose } from "react-icons/md";
+import { IoIosOptions } from "react-icons/io";
+import { Link } from "react-router-dom";
+
+export default function TabsListed() {
+  const tabs = ["about", "works", "contact", "resume"];
+  const [active, setActive] = useState(tabs[0]); //for toggling the active tab
+
+  const [navbarOpen, setNavbarOpen] = useState(false); //for toggling tab menu
+
+  //handles the name of the tabs
+  function handleTab(tab) {
+    if (tab === tabs[0]) {
+      return "About";
+    }
+    if (tab === tabs[1]) {
+      return "Works";
+    }
+    if (tab === tabs[2]) {
+      return "Contact";
+    } else {
+      return "Resume";
+    }
+  }
+  // //handles the toggle for the tabs bar
+  // const handleToggle = () => {
+  //   setNavbarOpen((prev) => !prev);
+  // };
+  // //closes the tab bar after clicking nav item
+  // const closeMenu = () => {
+  //   setNavbarOpen(false);
+  // };
+
+  const path = window.location.pathname.split("/");
+  return (
+    <nav className="navBar">
+      {/* <button onClick={handleToggle}>
+        {navbarOpen ? (
+          <MdClose
+            style={{ color: "#fff", width: "2.5rem", height: "2.5rem" }}
+          />
+        ) : (
+          <IoIosOptions
+            style={{ color: "white", width: "2.5rem", height: "2.5rem" }}
+          />
+        )}
+      </button> */}
+      <ul className="navbarOpen display-5 ">
+        {tabs.map((tab) => (
+          <li>
+            <Link
+              to={tab}
+              key={tab.id}
+              active={active === tab}
+              onClick={() => {
+                setActive(tab);
+                // closeMenu();
+              }}
+              className={
+                path[2] === tab ? "tabs nav-item tab-active " : "tabs nav-item"
+              }
+            >
+              {handleTab(tab)}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
