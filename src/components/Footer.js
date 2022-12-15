@@ -22,6 +22,7 @@ export default function Footer() {
           Created By Anthony Linebaugh with ❤️{" "}
           <a href="https://github.com/ajlineb/React-Portfolio"> Source Code</a>
         </p>
+        <p className="time-stamp">Last update: 12/15/2022 at 1:27 am EST</p>
         <p className="closing">© 2022 </p>
       </div>
     </div>

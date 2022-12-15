@@ -372,3 +372,9 @@ a:hover {
 .menuNav li:first-child {
   margin-top: 7rem;
 }
+
+.time-stamp {
+  font-style: italic;
+  color: #6b6b6b;
+  font-size: 12px;
+}
