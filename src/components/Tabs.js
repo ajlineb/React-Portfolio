@@ -4,7 +4,7 @@ import { IoIosOptions } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 export default function Tabs() {
-  const tabs = ["about", "works", "contact", "resume"];
+  const tabs = ["", "works", "contact", "resume"];
   const [active, setActive] = useState(tabs[0]); //for toggling the active tab
 
   const [navbarOpen, setNavbarOpen] = useState(false); //for toggling tab menu
@@ -33,6 +33,14 @@ export default function Tabs() {
   };
 
   const path = window.location.pathname.split("/");
+
+  //for getting the about path since the array becomes only 2 length
+  const getPath = () => {
+    if (path.length < 3) {
+      return "";
+    } else return path[2];
+  };
+
   return (
     <nav className="navBar">
       <button onClick={handleToggle}>
@@ -56,13 +64,14 @@ export default function Tabs() {
             <Link
               to={tab}
               key={tab.id}
-              active={active === tab}
               onClick={() => {
                 setActive(tab);
                 closeMenu();
               }}
               className={
-                path[2] === tab ? "tabs nav-item tab-active " : "tabs nav-item"
+                getPath() === tab
+                  ? "tabs nav-item tab-active "
+                  : "tabs nav-item"
               }
             >
               {handleTab(tab)}
