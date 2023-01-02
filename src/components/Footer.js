@@ -26,7 +26,7 @@ export default function Footer() {
           </a>
         </p>
         <p className="time-stamp">Last update: 12/17/2022 at 12:49 am EST</p>
-        <p className="closing">© 2022 </p>
+        <p className="closing">© 2022 - 2023 </p>
       </div>
     </div>
   );
