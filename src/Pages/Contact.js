@@ -1,40 +1,55 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { validEmail, validName, validText } from "../utils/regex";
 import { Row, Col } from "react-bootstrap";
 
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [nameErr, setNameErr] = useState(true);
-  const [email, setEmail] = useState("");
-  const [emailErr, setEmailErr] = useState(true);
-  const [text, setText] = useState("");
-  const [textErr, setTextErr] = useState(true);
+  const initialValues = { name: "", email: "", text: "" };
 
-  const validate = (e) => {
-    e.preventDefault();
-    if (!validName.test(name)) {
-      setNameErr(true);
-    } else {
-      setNameErr(false);
-    }
-    if (!validEmail.test(email)) {
-      setEmailErr(true);
-    } else {
-      setEmailErr(false);
-    }
-    if (!validText.test(text)) {
-      setTextErr(true);
-    } else {
-      setTextErr(false);
-    }
-    if (!nameErr && !emailErr && !textErr) {
-      //console.log({ nameErr, emailErr, textErr });
-      setName("");
-      setEmail("");
-      setText("");
-    }
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrs, setFormErrs] = useState({});
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  //important that you put a "name" or whatever you want to call it in the input tags info area so that it knows which "name" key to put to the value
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
   };
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setFormErrs(validate(formValues));
+    setIsSubmit(true);
+  };
+
+  //this is used to check that the info is coming through correctly
+  // useEffect(() => {
+  //   console.log(formErrs, "errors");
+  //   if (Object.keys(formErrs).length === 0 && isSubmit) {
+  //     //console.log(formValues, "values");
+  //   }
+  // }, [formErrs]);
+
+  const validate = (values) => {
+    const errors = {};
+    if (!values.name) {
+      errors.name = "Please type your name";
+    } else if (!validName.test(values.name)) {
+      errors.name = "Not a valid name";
+    }
+    if (!values.email) {
+      errors.email = "Please type your email";
+    } else if (!validEmail.test(values.email)) {
+      errors.email = "This is not a valid email";
+    }
+    if (!values.text) {
+      errors.text = "Text field is not complete";
+    } else if (!validText.test(values.text)) {
+      errors.text = "Please type more than a few words";
+    }
+    return errors;
+  };
+
+  console.log(formValues);
   return (
     <div className="info">
       <Row className="align-items-center contact-title">
@@ -47,41 +62,44 @@ export default function Contact() {
                 type="text"
                 className="form-control"
                 id="name"
+                name="name"
                 aria-describedby="emailHelp"
                 placeholder="Enter Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                value={formValues.name}
+                onChange={handleChange}
               />
-              {nameErr && <p id="err">Your name is not valid</p>}{" "}
+              <p id="err">{formErrs.name}</p>
               <div>
                 <label htmlFor="exampleInputEmail1">Email address</label>
                 <input
                   type="email"
                   className="form-control"
                   id="exampleInputEmail1"
+                  name="email"
                   placeholder="Enter email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={formValues.email}
+                  onChange={handleChange}
                 />
               </div>
-              {emailErr && <p id="err">Your email is not valid</p>}
+              <p id="err">{formErrs.email}</p>
               <div className="form-group">
                 <label htmlFor="textField">Leave a message!</label>
                 <textarea
                   className="form-control"
                   id="textField"
+                  name="text"
                   rows="10"
                   placeholder="Enter Text under 200 characters"
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
+                  value={formValues.text}
+                  onChange={handleChange}
                 ></textarea>
-                {textErr && <p id="err">You must have a valid entry!</p>}
+                <p id="err">{formErrs.text}</p>
               </div>
             </div>
             <button
               type="submit"
               className="btn btn-success"
-              onClick={validate}
+              onClick={onSubmit}
             >
               Submit
             </button>
