@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.6f56ee9c.css",
-    "main.js": "/React-Portfolio/static/js/main.2ad0f7f2.js",
+    "main.css": "/React-Portfolio/static/css/main.caaab762.css",
+    "main.js": "/React-Portfolio/static/js/main.5d2e6a1a.js",
     "static/js/787.3c86a6c9.chunk.js": "/React-Portfolio/static/js/787.3c86a6c9.chunk.js",
     "static/media/AstroProject.png": "/React-Portfolio/static/media/AstroProject.f4c55022e3a2947da247.png",
     "static/media/NarrativeTreasures.png": "/React-Portfolio/static/media/NarrativeTreasures.fde78ca592b813fdc59b.png",
@@ -10,12 +10,12 @@
     "static/media/mySQL.png": "/React-Portfolio/static/media/mySQL.6e42b2a035b28f240021.png",
     "static/media/mongoDB.png": "/React-Portfolio/static/media/mongoDB.940824112db2f1788f28.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.6f56ee9c.css.map": "/React-Portfolio/static/css/main.6f56ee9c.css.map",
-    "main.2ad0f7f2.js.map": "/React-Portfolio/static/js/main.2ad0f7f2.js.map",
+    "main.caaab762.css.map": "/React-Portfolio/static/css/main.caaab762.css.map",
+    "main.5d2e6a1a.js.map": "/React-Portfolio/static/js/main.5d2e6a1a.js.map",
     "787.3c86a6c9.chunk.js.map": "/React-Portfolio/static/js/787.3c86a6c9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f56ee9c.css",
-    "static/js/main.2ad0f7f2.js"
+    "static/css/main.caaab762.css",
+    "static/js/main.5d2e6a1a.js"
   ]
 }
