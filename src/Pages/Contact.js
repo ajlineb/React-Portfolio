@@ -3,18 +3,19 @@ import { validEmail, validName, validText } from "../utils/regex";
 import { Row, Col } from "react-bootstrap";
 
 export default function Contact() {
-  const initialValues = { name: "", email: "", text: "" };
+  const initialValues = { name: "", email: "", text: "" }; //just inital value for the form
 
-  const [formValues, setFormValues] = useState(initialValues);
-  const [formErrs, setFormErrs] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [formValues, setFormValues] = useState(initialValues); //used for holding the data in the forms
+  const [formErrs, setFormErrs] = useState({}); //used for custom error messages
+  const [isSubmit, setIsSubmit] = useState(false); //not really used
 
   //important that you put a "name" or whatever you want to call it in the input tags info area so that it knows which "name" key to put to the value
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormValues({ ...formValues, [name]: value });
+    setFormValues({ ...formValues, [name]: value }); //data is spread onto the formvalues based on their name key
   };
 
+  //on submit sends the data to be validated
   const onSubmit = (e) => {
     e.preventDefault();
     setFormErrs(validate(formValues));
@@ -29,6 +30,7 @@ export default function Contact() {
   //   }
   // }, [formErrs]);
 
+  //this validates the information for each field
   const validate = (values) => {
     const errors = {};
     if (!values.name) {
