@@ -10,12 +10,12 @@ export default function WorkItem() {
         data.map((d) => {
           return (
             <Col key={d.id} sm="6" className="image-container">
-              <a id="linkContainer" href={d.deployLink}>
+              <a id="linkContainer" href={d.deployLink} target="_works">
                 <img id="showcase" src={d.img.src} alt={d.img.alt}></img>
                 <p className="text-block">
                   {d.projectName}
                   <br></br>
-                  <a href={d.gitLink}>
+                  <a href={d.gitLink} target="_github">
                     <img id="gitLink" src={d.gitImg.src} alt={d.gitImg.alt} />
                   </a>
                 </p>
