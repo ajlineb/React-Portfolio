@@ -24,6 +24,7 @@ export default function WorkItem() {
               <p id="workInfo">
                 {d.info}
                 <span className={d.style}>{d.important}</span>
+                {d.err ? <p className="text-danger"> {d.err}</p> : <></>}
               </p>
             </Col>
           );
